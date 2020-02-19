@@ -224,6 +224,51 @@ class AIPlayer(Player):
     def createNode(self, move, nextState, depth, turnsToWin, parent):
         return {"move": move, "state": nextState, "depth": depth,
                 "turnsToWin": turnsToWin + depth, "parent": parent}
+
+    ##############################################
+    ##             START OF HW 3               ##
+    ##############################################
+
+    # External Citation: https://stackabuse.com/minimax-and-alpha-beta-pruning-in-python/
+
+    def minimax ():
+        # Check if move is legal
+        # Check if game has ended (win or lose condition has been met)
+        return None
+
+    def max ():
+        # For all legal moves
+            # Make a move or set of moves (then end turn)
+            # Call min fxn
+    #         (m, min_i, min_j) = self.min()
+    #             # Fixing the maxv value if needed
+    #             if m > maxv:
+    #                 maxv = m
+    #                 px = i
+    #                 py = j
+    #          # Setting back the field to empty
+    #          self.current_state[i][j] = '.'
+    # return (maxv, px, py)
+            
+
+        return None
+    
+    def min ():
+        # For all legal moves
+            # Make a move or set of moves (then end turn)
+            # Call max fxn
+    #         (m, max_i, max_j) = self.max()
+    #             # Fixing the minv value if needed
+    #             if m > minv:
+    #                 minv = m
+    #                 px = i
+    #                 py = j
+    #          # Setting back the field to empty
+    #          self.current_state[i][j] = '.'
+    # return (minv, px, py)
+        return None
+
+
     
     ##
     #getMove
