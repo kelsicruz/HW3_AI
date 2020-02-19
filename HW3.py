@@ -235,8 +235,13 @@ class AIPlayer(Player):
         # Check if move is legal
         # Check if game has ended (win or lose condition has been met)
         return None
+    
+    # Could be useful: getWinner and listAllLegalMoves
 
     def max ():
+        max_value = -1
+        max_move = None
+
         # For all legal moves
             # Make a move or set of moves (then end turn)
             # Call min fxn
@@ -254,6 +259,8 @@ class AIPlayer(Player):
         return None
     
     def min ():
+        min_value = -1
+        min_move = None
         # For all legal moves
             # Make a move or set of moves (then end turn)
             # Call max fxn
